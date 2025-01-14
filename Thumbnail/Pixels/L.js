@@ -1,6 +1,8 @@
 // This script takes the json response from the E.js fiel and returns a json with only the "large2x" URLs
 
-const jsonData = `INSERT REPONSE FROM PEXELS API`;
+// INSERT REPONSE FROM PEXELS API between the ``
+const jsonData = ``;
+
 
 const data = JSON.parse(jsonData); // Parse the JSON string into a JavaScript object
 
