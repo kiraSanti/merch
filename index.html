@@ -10,13 +10,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
-            background-repeat: repeat;
-            background-size: auto;
+            height: 1000vh;
+        }
+
+        #fullScreenImage {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
+
 <body>
+    <img id="fullScreenImage"
+        src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/kirasan_23701_ultrarealistic_high_definition_photo_of_the_clo_c33be3a8-59b5-4698-a41a-ddccd611a50d_3_4.png?v=1736828889"/>
 </body>
+
 </html>
