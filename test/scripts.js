@@ -2,7 +2,7 @@ const imageUrls = [
     // Do not delete this first image as it is shown as the first image always
   {
     "id": 800330,
-    "large2x": "https://images.pexels.com/photos/800330/pexels-photo-800330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=140",
+    "large2x": "https://images.pexels.com/photos/800330/pexels-photo-800330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "url": "https://www.pexels.com/photo/dog-with-brown-faux-fur-headband-800330/"
   },
     // Add images...

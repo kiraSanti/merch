@@ -1,7 +1,7 @@
-#pexelsThumbnail {
+/* #pexelsThumbnail {
     width: 156rem;
     height: 156rem;
-}
+} */
 
 /* Small devices (phones, less than 600px) */
 @media (max-width: 599px) {
@@ -22,7 +22,7 @@
 /* Large devices (desktops, 900px and up) */
 @media (min-width: 900px) {
     #pexelsThumbnail {
-        width: 16rem;
-        height: 16rem;
+        width: 21rem;
+        height: 21rem;
     }
 }
