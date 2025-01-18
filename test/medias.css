@@ -6,8 +6,8 @@
 /* Small devices (phones, less than 600px) */
 @media (max-width: 599px) {
     #pexelsThumbnail {
-        width: 12rem;
-        height: 12rem;
+        width: 7rem;
+        height: 7rem;
     }
 }
 
