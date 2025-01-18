@@ -14,8 +14,8 @@
 /* Medium devices (tablets, 600px to 899px) */
 @media (min-width: 600px) and (max-width: 899px) {
     #pexelsThumbnail {
-        width: 14rem;
-        height: 14rem;
+        width: 7rem;
+        height: 7rem;
     }
 }
 
