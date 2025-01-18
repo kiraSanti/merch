@@ -22,7 +22,7 @@
 /* Large devices (desktops, 900px and up) */
 @media (min-width: 900px) {
     #pexelsThumbnail {
-        width: 21rem;
-        height: 21rem;
+        width: 7rem;
+        height: 7rem;
     }
 }
