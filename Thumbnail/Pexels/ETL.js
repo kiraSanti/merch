@@ -1,7 +1,7 @@
 // This script makes a GET call on the Pexels API (https://www.https://www.pexels.com/api/documentation)
 // Filters the results to have only the 'id' 'large2x' and 'url' fields
 // Automatically downloads a .json file into the local machine with the results
-// removes the '[' ']' symbols from the downloaded/printed json, and adds a ',' at the end of it
+// removes the '[' ']' symbols from the downloaded/printed json, and adds a ',' at the end of it.
 
 
 //Calls
