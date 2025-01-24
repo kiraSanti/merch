@@ -17,11 +17,14 @@ const apiKey = "6EdsN9H0AGKaO5qjDly59dWAJJpXaKZf2pc1AfbuaNeSzGyDGJQxcFqK";
 
 let page = 1;
 const perPage = 80;
-const query = 'animals';
-const numberOfPagesToCall = 2;
+const query = 'sea animals';
+const numberOfPagesToCall = 100;
+
+// Initialize photoLinks to accumulate formatted results
+let photoLinks = '';
 
 // Function to make the GET request
-const fetchCuratedPhotos = async () => {
+const fetchPhotos = async () => {
     try {
         // Construct the API URL using the current page value
         const apiUrl = `https://api.pexels.com/v1/search?page=${page}&per_page=${perPage}&query=${encodeURIComponent(query)}`;
@@ -51,38 +54,49 @@ const fetchCuratedPhotos = async () => {
         // Create the desired format without brackets
         const formattedPhotos = photosArray.map(photo => JSON.stringify(photo, null, 2)).join(',\n');
 
-        // Print the formatted result
-        console.log(formattedPhotos + ',');
-
-        // // Create a blob from the photos array
-        // const jsonBlob = new Blob([formattedPhotos + ','], { type: 'application/json' });
-
-        // // Create a download link
-        // const url = URL.createObjectURL(jsonBlob);
-        // const link = document.createElement('a');
-        // link.href = url;
-        // link.download = 'TphotosTEST.json'; // Set the default filename
-
-        // // Append to body, click the link, and remove it
-        // document.body.appendChild(link);
-        // link.click();
-        // document.body.removeChild(link);
-
-        // // Revoke the object URL after download
-        // URL.revokeObjectURL(url);
+        // Accumulate the formatted photos into photoLinks variable
+        photoLinks += formattedPhotos + ',\n'; // Adding a comma and newline for readability
 
     } catch (error) {
         console.error('Error fetching data:', error);
     }
 };
 
-// Main function to fetch photos multiple times
-const fetchPhotosUntilPageThree = async () => {
-    while (page <= numberOfPagesToCall) {
-        await fetchCuratedPhotos(); // Fetch the photos for the current page
-        page++; // Increment page for the next call
-    }
+// Function to download the JSON file
+const downloadJsonFile = (data) => {
+    // Create a Blob from the JSON string
+    const jsonBlob = new Blob([data], { type: 'application/json' });
+
+    // Create a link and set the URL to the Blob
+    const url = URL.createObjectURL(jsonBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'photoLinks.json'; // Set the filename
+
+    // Append to body, click the link to trigger download, and remove it
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Revoke the object URL after download
+    URL.revokeObjectURL(url);
 };
 
+// Main function to fetch photos multiple times
+const fetchNDownloadPhotos = async () => {
+    while (page <= numberOfPagesToCall) {
+        await fetchPhotos(); // Fetch the photos for the current page
+        page++; // Increment page for the next call
+    }
+    
+    // Print the accumulated results after all pages have been fetched
+    console.log(photoLinks);
+
+    // Automatically download photoLinks as a JSON file
+    downloadJsonFile(photoLinks);
+};
+
+
+
 // Call the main function to execute the fetching
-fetchPhotosUntilPageThree();
+fetchNDownloadPhotos();
