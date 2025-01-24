@@ -17,7 +17,7 @@ const apiKey = "EczKHHpgeSVuJApZP0YcNnq4WLYdItsomHFwFgJYqP1bfPFsgMcVJGYp";
 
 let page = 1;
 const perPage = 80;
-const query = 'architecture';
+const query = 'daily life';
 const numberOfPagesToCall = 100;
 
 // Initialize photoLinks to accumulate formatted results
