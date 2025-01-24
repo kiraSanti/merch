@@ -13,7 +13,7 @@
 
 
 
-const apiKey = "6EdsN9H0AGKaO5qjDly59dWAJJpXaKZf2pc1AfbuaNeSzGyDGJQxcFqK";
+const apiKey = "EczKHHpgeSVuJApZP0YcNnq4WLYdItsomHFwFgJYqP1bfPFsgMcVJGYp";
 
 let page = 1;
 const perPage = 80;
