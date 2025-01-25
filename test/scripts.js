@@ -1,13 +1,36 @@
-const imageUrls = [
-    // Do not delete this first image as it is shown as the first image always
-  {
-    "id": 800330,
-    "large2x": "https://images.pexels.com/photos/800330/pexels-photo-800330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "url": "https://www.pexels.com/photo/dog-with-brown-faux-fur-headband-800330/"
-  },
-    // Add images...
-  
-];
+// Declare the variable outside of the fetch call.
+let imageUrls = []; 
+
+// Fetch the JSON file
+fetch('photoLinks.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json(); // Parse the JSON data
+    })
+    .then(data => {
+        imageUrls = data; // Assign the parsed data to imageUrls
+        console.log(imageUrls); // Now you can use imageUrls in your code
+    })
+    .catch(error => {
+        console.error('Error fetching JSON:', error);
+    });
+
+// //START PHOTOS
+// // Do not delete this first image id 800330 as it is Kirita!
+// const imageUrls = [
+//     // Do not delete this first image as it is shown as the first image always
+//   {
+//     "id": 800330,
+//     "large2x": "https://images.pexels.com/photos/800330/pexels-photo-800330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+//     "url": "https://www.pexels.com/photo/dog-with-brown-faux-fur-headband-800330/"
+//   },
+//     // Add images...
+// ];
+// //FINISH PHOTOS
+
+
 
 let currentIndex = 0;
 const imageElement = document.getElementById('pexelsThumbnail');
