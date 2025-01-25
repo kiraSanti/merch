@@ -20,6 +20,17 @@ body {
     object-fit: cover;
 }
 
+#pexelsThumbnailContainer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+}
+
+
 #pexelsThumbnail {
     position: fixed;
     left: 0;
