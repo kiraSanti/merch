@@ -17,7 +17,7 @@ const apiKey = "EczKHHpgeSVuJApZP0YcNnq4WLYdItsomHFwFgJYqP1bfPFsgMcVJGYp";
 
 let page = 1;
 const perPage = 80;
-const query = 'daily life';
+const query = 'space';
 const numberOfPagesToCall = 100;
 
 // Initialize photoLinks to accumulate formatted results
@@ -30,7 +30,7 @@ const fetchPhotos = async () => {
         const apiUrl1 = `https://api.pexels.com/v1/search?page=${page}&per_page=${perPage}&query=${encodeURIComponent(query)}`;
         const apiUrl2= `https://api.pexels.com/v1/curated?page=${page}&per_page=${perPage}`;
         
-        const response = await fetch(apiUrl2, {
+        const response = await fetch(apiUrl1, {
             method: 'GET',
             headers: {
                 'Authorization': apiKey
