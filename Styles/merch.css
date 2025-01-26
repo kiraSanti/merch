@@ -20,7 +20,7 @@ body {
     object-fit: cover;
 }
 
-#pexelsThumbnail {
+/* #pexelsThumbnail {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -30,4 +30,4 @@ body {
     object-fit: cover;
     padding: 10px;
     cursor: pointer;
-}
+} */
