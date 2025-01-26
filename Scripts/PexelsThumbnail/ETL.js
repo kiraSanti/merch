@@ -27,9 +27,10 @@ let photoLinks = '';
 const fetchPhotos = async () => {
     try {
         // Construct the API URL using the current page value
-        const apiUrl = `https://api.pexels.com/v1/search?page=${page}&per_page=${perPage}&query=${encodeURIComponent(query)}`;
+        const apiUrl1 = `https://api.pexels.com/v1/search?page=${page}&per_page=${perPage}&query=${encodeURIComponent(query)}`;
+        const apiUrl2= `https://api.pexels.com/v1/curated?page=${page}&per_page=${perPage}`;
         
-        const response = await fetch(apiUrl, {
+        const response = await fetch(apiUrl2, {
             method: 'GET',
             headers: {
                 'Authorization': apiKey
