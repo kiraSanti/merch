@@ -29,11 +29,11 @@ body {
     height: 90px;
     margin: 10px;
     padding: 0px;
-    border-radius: 25px;
+    border-radius: 17px;
 
-    -webkit-box-shadow: 0px 0px 0px 1px rgb(255, 255, 255);
-    -moz-box-shadow: 0px 0px 0px 1px rgb(255, 255, 255);
-    box-shadow: 0px 0px 0px 1px rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 0px 1px rgb(255, 197, 255);
+    -moz-box-shadow: 0px 0px 0px 1px rgb(255, 197, 255);
+    box-shadow: 0px 0px 0px 1px rgb(255, 197, 255);
 }
 
 
@@ -43,7 +43,7 @@ body {
     bottom: 0;
     width: 90px;
     height: 90px;
-    border-radius: 25px;
+    border-radius: 17px;
     object-fit: cover;
     /* padding: 10px; */
     margin: 10px;
