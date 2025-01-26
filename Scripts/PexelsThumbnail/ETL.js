@@ -17,7 +17,7 @@ const apiKey = "EczKHHpgeSVuJApZP0YcNnq4WLYdItsomHFwFgJYqP1bfPFsgMcVJGYp";
 
 let page = 1;
 const perPage = 80;
-const query = 'space';
+const query = 'nature photography';
 const numberOfPagesToCall = 100;
 
 // Initialize photoLinks to accumulate formatted results
