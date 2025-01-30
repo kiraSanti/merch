@@ -10,7 +10,7 @@ body {
     background-size: auto;
 }
     
-
+/* pexelsThumbnail */
 #pexelsThumbnailContainer {
 
     position: fixed;
@@ -34,6 +34,81 @@ body {
     bottom: 0;
     width: 90px;
     height: 90px;
+    border-radius: 17px;
+    object-fit: cover;
+    /* padding: 10px; */
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* typewriter */
+#typedtext {
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    max-width: 60%;
+    /*max-height: 87px;*/
+    margin:10px;
+    padding: 2px 4px 2px 6px;
+    
+    background-color: white;
+    font-family: "Schoolbell", monospace;
+    font-size: 12px; 
+    letter-spacing: 2px; 
+  
+    border-radius: 10px 10px 0px 10px;
+
+}
+
+
+/* gifs */
+#merch {
+    position: fixed;
+    left: 0px;
+    bottom: 285px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    /* padding: 10px; */
+    margin: 10px;
+    cursor: pointer;
+}
+
+#youtube {
+    position: fixed;
+    left: 0;
+    bottom: 230px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    /* padding: 10px; */
+    margin: 10px;
+    cursor: pointer;
+}
+
+#emailUs {
+    position: fixed;
+    left: 0;
+    bottom: 170px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    /* padding: 10px; */
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+#iLoveCoffe {
+    position: fixed;
+    left: 0;
+    bottom: 120px;
+    width: 35px;
+    height: 35px;
     border-radius: 17px;
     object-fit: cover;
     /* padding: 10px; */
