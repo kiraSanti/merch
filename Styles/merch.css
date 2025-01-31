@@ -10,6 +10,7 @@ body {
     background-size: auto;
 }
 
+
 #pinkClouds {
     display: block;
     position: fixed;
@@ -20,14 +21,13 @@ body {
     object-fit: cover;
 }
 
-/* #pexelsThumbnail {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 90px;
-    height: 90px;
-    border-radius: 25px;
-    object-fit: cover;
-    padding: 10px;
-    cursor: pointer;
-} */
+#products {
+    z-index: 1;
+}
+
+.products a img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
