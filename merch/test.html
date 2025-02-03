@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png"
         href="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/KiraLogoV5.png?v=1736122362">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=arrow_back" />
+        
     <!-- <link rel="stylesheet" href="/Styles/merch.css"> -->
     <title>KiraSan</title>
     
@@ -17,6 +20,28 @@ body {
     align-items: center;
   background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
 }
+
+#announcementBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 38px;
+  /*line-height: 40px;*/
+  width: 100%;
+  background: #FFC5FF;
+justify-content: center;
+    align-items: center;
+}
+
+#backArrow {
+    
+    background-color: white;
+    width: 50px;
+    height: 100%;
+    
+    
+}
+
 
 #productsContainer {
   display: flex;
@@ -45,9 +70,9 @@ body {
 }
 
 .imageContainer:hover {
--webkit-box-shadow: 0px 0px 3px 2px rgb(255, 197, 255);
-    -moz-box-shadow: 0px 0px 3px 2px rgb(255, 197, 255);
-     box-shadow: 0px 0px 3px 2px rgb(255, 197, 255);
+-webkit-box-shadow: 0px 0px 1px 2px rgb(255, 197, 255);
+    -moz-box-shadow: 0px 0px 1px 2px rgb(255, 197, 255);
+     box-shadow: 0px 0px 1px 2px rgb(255, 197, 255);
     
     transform: scale(1.02);
 }
@@ -81,16 +106,6 @@ body {
 
 
 
-#announcementBar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 38px;
-  /*line-height: 40px;*/
-  width: 100%;
-  background: #FFC5FF;
-
-}
 
 
 
@@ -100,9 +115,18 @@ body {
 
 <body>
     
+    
     <div id="announcementBar">
-  
-</div>
+        
+        <div id="backArrow">
+            
+              <span  class="material-symbols-outlined">
+            arrow_back
+            </span>
+
+        </div>
+
+    </div>
 
   <div id="productsContainer">
 
