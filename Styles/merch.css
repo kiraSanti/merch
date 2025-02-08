@@ -1,3 +1,9 @@
+/* Lollipop cursor */
+* {
+    cursor: url(https://cur.cursors-4u.net/food/foo-1/foo6.cur), auto !important;
+    /* Source: https://www.cursors-4u.com/cursor/2005/04/22/foo6-11.html */
+  }
+
 body {
     margin: 0;
     padding: 0;
