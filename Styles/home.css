@@ -100,6 +100,7 @@ body {
     object-fit: cover;
     margin: 10px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 #youtube {
@@ -112,6 +113,7 @@ body {
     object-fit: cover;
     margin: 10px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 #emailUs {
@@ -124,6 +126,7 @@ body {
     object-fit: cover;
     margin: 10px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -137,4 +140,5 @@ body {
     object-fit: cover;
     margin: 10px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
