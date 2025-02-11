@@ -6595,35 +6595,68 @@ var quotes = [
   var sContents = ''; // initialise contents variable
   var iRow; // initialise current row
   
-  function typewriter() {
-    sContents = ' ';
-    iRow = Math.max(0, iIndex - iScrollAt);
+  function getRandomQuote() {
+    var randomIndex = Math.floor(Math.random() * quotes.length);
+    var quote = quotes[randomIndex];
+    return [
+        quote.text,
+        "\n",
+        "-" + quote.author
+    ];
+}
+
+var iSpeed = 100;
+var iScrollAt = 20;
+var isTyping = false;
+
+function typewriter() {
+    if (isTyping) return;
+    isTyping = true;
+
+    var aText = getRandomQuote();
+    var iIndex = 0;
+    var iTextPos = 0;
+    var iArrLength = aText[0].length;
+    var sContents = '';
     var destination = document.getElementById("typedtext");
-  
-    while (iRow < iIndex) {
-        sContents += aText[iRow++] + '<br />';
-    }
-    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-  
-    // Auto-scroll to the latest text
-    destination.scrollTop = destination.scrollHeight;
-  
-    if (iTextPos++ == iArrLength) {
-        iTextPos = 0;
-        iIndex++;
-  
-        if (iIndex != aText.length) {
-            iArrLength = aText[iIndex].length;
-            setTimeout(typewriter, 500);
-        } else {
-            // When the typing is finished...
-            destination.style.borderRadius = "10px"; // Set the border-radius
-            destination.innerHTML = destination.innerHTML.slice(0, -1); // Remove the underscore
+    destination.style.borderRadius = "10px 10px 0px 10px"; 
+    
+    function type() {
+        sContents = '';
+        var iRow = Math.max(0, iIndex - iScrollAt);
+        
+        while (iRow < iIndex) {
+            sContents += aText[iRow++] + '<br />';
         }
-    } else {
-        setTimeout(typewriter, iSpeed);
+        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+        destination.scrollTop = destination.scrollHeight;
+
+        if (iTextPos++ == iArrLength) {
+            iTextPos = 0;
+            iIndex++;
+
+            if (iIndex != aText.length) {
+                iArrLength = aText[iIndex].length;
+                setTimeout(type, 500);
+            } else {
+                destination.style.borderRadius = "10px";
+                destination.innerHTML = destination.innerHTML.slice(0, -1);
+                isTyping = false;
+            }
+        } else {
+            setTimeout(type, iSpeed);
+        }
     }
-  }
-  
-  typewriter();
+    
+    type();
+}
+
+document.getElementById("owl").addEventListener("click", function() {
+    if (!isTyping) {
+      
+        typewriter();
+    }
+});
+
+typewriter();
   

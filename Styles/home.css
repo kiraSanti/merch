@@ -214,3 +214,27 @@ margin: 10px;
 
 
 }
+  
+  
+#owl {
+    position: fixed;
+    right: -14px;
+    bottom: -17px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    margin: 0;
+    cursor: pointer;
+}
+
+#owl>img {
+    transition: transform 0.2s;
+}
+
+
+#owl>img:hover {
+    transform: scale(1.35);
+
+
+}  
