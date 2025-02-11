@@ -6582,27 +6582,6 @@ var quotes = [
         "\n",
         "-" + quote.author
     ];
-  }
-  
-  // Set up text to print, each item in array is a new line
-  var aText = getRandomQuote();
-  var iSpeed = 100; // time delay of print out
-  var iIndex = 0; // start printing array at this position
-  var iArrLength = aText[0].length; // the length of the text array
-  var iScrollAt = 20; // start scrolling up at this many lines
-  
-  var iTextPos = 0; // initialise text position
-  var sContents = ''; // initialise contents variable
-  var iRow; // initialise current row
-  
-  function getRandomQuote() {
-    var randomIndex = Math.floor(Math.random() * quotes.length);
-    var quote = quotes[randomIndex];
-    return [
-        quote.text,
-        "\n",
-        "-" + quote.author
-    ];
 }
 
 var iSpeed = 100;
@@ -6659,4 +6638,5 @@ document.getElementById("owl").addEventListener("click", function() {
 });
 
 typewriter();
+
   
