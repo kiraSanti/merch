@@ -20,6 +20,9 @@ body {
     display: none;
   }
 
+
+
+  
 #pinkBarBottom {
     position: fixed;
     bottom: 0;
@@ -42,7 +45,7 @@ body {
     bottom: 0;
     width: 110px;
     height: 90px;
-    margin: 20px;
+    margin: 15px;
     padding: 0px;
     border-radius: 17px;
     background-color: white;
@@ -62,7 +65,7 @@ body {
     border-radius: 17px;
     object-fit: cover;
     /* padding: 10px; */
-    margin: 20px;
+    margin: 15px;
     cursor: pointer;
 }
 
