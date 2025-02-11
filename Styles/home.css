@@ -2,7 +2,7 @@
 * {
     cursor: url(https://cur.cursors-4u.net/food/foo-1/foo6.cur), auto !important;
     /* Source: https://www.cursors-4u.com/cursor/2005/04/22/foo6-11.html */
-  }
+}
 
 body {
     margin: 0;
@@ -20,12 +20,16 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 20px);
+    margin: 10px;
     height: 106px;
     background: #ffd9f0;
     border-top: solid 1px white;
+    /* margin: 10px; */
+    border-radius: 17px;
+
 }
-    
+
 /* pexelsThumbnail */
 #pexelsThumbnailContainer {
 
@@ -34,10 +38,11 @@ body {
     bottom: 0;
     width: 90px;
     height: 90px;
-    margin: 10px;
+    margin: 20px;
     padding: 0px;
     border-radius: 17px;
-
+    background-color: white;
+    
     -webkit-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
     -moz-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
@@ -53,8 +58,18 @@ body {
     border-radius: 17px;
     object-fit: cover;
     /* padding: 10px; */
-    margin: 10px;
+    margin: 20px;
     cursor: pointer;
+}
+
+
+#pexelsThumbnail:hover{
+    left: 3px;
+    bottom: 3px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+
 }
 
 /* typewriter */
@@ -63,15 +78,15 @@ body {
     position: fixed;
     right: 0;
     bottom: 0;
-    max-width: 60%;
+    max-width: 40%;
     /*max-height: 87px;*/
-    margin:10px;
+    margin: 20px;
     padding: 2px 4px 2px 6px;
-    
+
     background-color: white;
     font-family: "Schoolbell", monospace;
-    font-size: 12px; 
-    letter-spacing: 2px; 
+    font-size: 12px;
+    letter-spacing: 2px;
     border: solid 1px black;
     border-radius: 10px 10px 0px 10px;
 
@@ -80,10 +95,26 @@ body {
 
 /* mainPageClickableGifs */
 
+
+#gifsContainer{
+    position: fixed;
+width: 55px;
+height: 225px;
+left: 0;
+bottom: 115px;
+border: solid 1px #ffd9f0;
+background-color: rgba(255, 255, 255, 0.090);
+/* background-color: #ffd9f0; */
+border-radius: 10px 10px 10px 10px;
+margin: 10px;
+
+
+}
+
 #merch {
     position: fixed;
-    left: 0px;
-    bottom: 285px;
+    left: 8px;
+    bottom: 298px;
     width: 35px;
     height: 35px;
     border-radius: 17px;
@@ -91,11 +122,48 @@ body {
     margin: 10px;
     cursor: pointer;
 }
+
+#merch>img {
+    transition: transform 0.2s;
+}
+
+
+#merch>img:hover {
+    transform: scale(1.30);
+
+
+}
+
 
 #youtube {
     position: fixed;
-    left: 0;
-    bottom: 230px;
+    left: 10;
+    bottom: 240px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+#youtube>img {
+    transition: transform 0.2s;
+}
+
+
+#youtube>img:hover {
+    transform: scale(1.28);
+
+
+}
+
+
+#emailUs {
+    position: fixed;
+    left: 13px;
+    bottom: 180px;
     width: 35px;
     height: 35px;
     border-radius: 17px;
@@ -104,27 +172,37 @@ body {
     cursor: pointer;
 }
 
-#emailUs {
-    position: fixed;
-    left: 0;
-    bottom: 170px;
-    width: 35px;
-    height: 35px;
-    border-radius: 17px;
-    object-fit: cover;
-    margin: 10px;
-    cursor: pointer;
+#emailUs>img {
+    transition: transform 0.2s;
+}
+
+
+#emailUs>img:hover {
+    transform: scale(1.32);
+
+
 }
 
 
 #iLoveCoffe {
     position: fixed;
-    left: 0;
-    bottom: 120px;
+    left: 10;
+    bottom: 135px;
     width: 35px;
     height: 35px;
     border-radius: 17px;
     object-fit: cover;
     margin: 10px;
     cursor: pointer;
+}
+
+#iLoveCoffe>img {
+    transition: transform 0.2s;
+}
+
+
+#iLoveCoffe>img:hover {
+    transform: scale(1.10);
+
+
 }
