@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/KiraLogoV5.png?v=1736122362">
+    <title>KiraSan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/kirasan_23701_ultrarealistic_high_definition_photo_of_the_clo_c33be3a8-59b5-4698-a41a-ddccd611a50d_3_4.png?v=1736828889');
+            /*background-repeat: repeat;
+            background-size: auto;*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #product-component-1735610958766 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255);
+            border-radius: 33px;
+            /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+            border: solid 1px black;
+        }
+        
+.shopify-buy-frame.shopify-buy-frame--toggle.is-sticky.is-active {
+    position: absolute;
+    top: 30px;
+}
+      iframe[name="frame-toggle"] {
+    height: 70px  !important;
+}
+      
+
+      
+    </style>
+</head>
+<body>
+    <div id='product-component-1735610958766'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: '5495a6-3f.myshopify.com',
+      storefrontAccessToken: '4b1ced1538e2ebcaa4d15f7c0e9ed716',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '8808048001249', //INSERTPID
+        node: document.getElementById('product-component-1735610958766'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "title": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "normal",
+        "color": "#000000"
+      },
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "14px",
+        "padding-top": "12px",
+        "padding-bottom": "12px",
+        "color": "white",
+        ":hover": {
+          "color": "white",
+          "background-color": "e6c3d8" /*DELTA*/
+        },
+        "background-image": "url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345')",/*DELTA*/
+        ":focus": {
+          "background-color": "#e6c3d8"/*DELTA*/
+        },
+        
+        ":hover": {
+          "font-size": "14.2px",
+          "text-decoration": "line-through"/*DELTA*/
+        }
+        ,
+        "border-style": "solid",
+        "border-width": "1px",
+        "border-color": "white",
+        "border-radius": "17px",
+        "padding-left": "12px",
+        "padding-right": "12px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      },
+      "price": {
+        "font-family": "Raleway, sans-serif",
+        "color": "#403e3e"
+      },
+      "compareAt": {
+        "font-family": "Raleway, sans-serif",
+        "color": "#403e3e"
+      },
+      "unitPrice": {
+        "font-family": "Raleway, sans-serif",
+        "color": "#403e3e"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "Ver Detalles"
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "14px",
+        "padding-top": "12px",
+        "padding-bottom": "12px",
+        "color": "white",
+        ":hover": {
+          "color": "white",
+          "background-color": "#e6c3d8"/*DELTA*/
+        },
+        "background-image": "url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345')",/*DELTA*/ 
+        ":hover": {
+          "font-size": "14.2px",
+          "text-decoration": "line-through"/*DELTA*/
+        },
+        
+        ":focus": {
+          "background-color": "#e6c3d8"/*DELTA*/
+        },
+        "border-radius": "16px",
+        "padding-left": "12px",
+        "padding-right": "12px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      },
+      "title": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "normal",
+        "font-size": "26px",
+        "color": "#000000"
+      },
+      "price": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "normal",
+        "font-size": "18px",
+        "color": "#4c4c4c"
+      },
+      "compareAt": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "unitPrice": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "description": {
+        "font-family": "Raleway, sans-serif",
+        "color": "#000000"
+      }
+    },
+    "googleFonts": [
+      "Raleway"
+    ],
+    "text": {
+      "button": "Agregar al carrito!"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "14px",
+        "padding-top": "12px",
+        "padding-bottom": "12px",
+        "color": "white",
+        ":hover": {
+          "color": "white",
+          "background-color": "#e6c3d8"/*DELTA*/
+        },
+        "background-image": "url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345')",/*DELTA*/
+        
+        ":hover": {
+          "font-size": "14.2px",
+          "text-decoration": "line-through"/*DELTA*/
+        },
+        
+        ":focus": {
+          "background-color": "#e6c3d8"/*DELTA*/
+        },
+        "border-radius": "16px"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "title": "Carrito :3",
+      "total": "Subtotal",
+      "empty": "No tienes nada en tu carrito 😦",
+      "notice": "Precio en USD",
+      "button": "Pagar"
+    },
+    "popup": false,
+    "googleFonts": [
+      "Raleway"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Raleway, sans-serif",
+        "background-color": "white",/*DELTA*/
+        ":hover": {
+          "background-color": "white" /*DELTA*/
+        },
+        ":focus": {
+          /*"background-color": "#e6c3d8"*/ /*DELTA*/
+        },
+        "border-style": "solid",
+        "border-width": "1px",
+        "border-color": "black",
+        "border-radius": "0px 0px 0px 10px",
+      },
+      "count": {
+        "font-size": "16px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "iconPath": {
+        "fill": "#000000"
+      }
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+</body>
+</html>
