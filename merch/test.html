@@ -1,285 +1,277 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/KiraLogoV5.png?v=1736122362">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/KiraLogoV5.png?v=1736122362">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=arrow_back" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=arrow_back" />
 
-	<!-- <link rel="stylesheet" href="/Styles/merch.css"> -->
-	<title>KiraSan</title>
+  <!-- <link rel="stylesheet" href="/Styles/merch.css"> -->
+  <title>KiraSan</title>
 
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			justify-content: center;
-			align-items: center;
-			background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
-		}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/kirasan_23701_ultrarealistic_high_definition_photo_of_the_clo_c33be3a8-59b5-4698-a41a-ddccd611a50d_3_4.png?v=1736828889') no-repeat center center fixed;
+    }
 
-		#announcementBar {
-			position: fixed;
-			top: 0;
-			left: 0;
-			height: 38px;
-			/*line-height: 40px;*/
-			width: 100%;
-			/* background: #ffcce7; */
-			background: #ffd9f0;
-			justify-content: center;
-			align-items: center;
-			z-index: 10;
+    #announcementBar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 38px;
+      /*line-height: 40px;*/
+      width: 100%;
+      /* background: #ffcce7; */
+      background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
+      background-repeat: repeat;
+      background-size: auto;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      border-bottom: solid 1px white;
+    }
+
+    #backArrowContainer {
+      background-color: white;
+      width: 50px;
+      height: 97%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: solid 1px black;
       border-bottom: solid 1px black;
-		}
+      /* border-bottom: solid 1px black; */
+      /*cursor: pointer;*/
+    }
 
-		
-		
-		
-		#backArrowContainer {
-			background-color: white;
-			width: 50px;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border-right: solid 1px black;
-			/* border-bottom: solid 1px black; */
-			/*cursor: pointer;*/
-		}
-		
-        
-		#backArrow {
-			position: relative;
-			width: 50px;
-			height: 30px;
-			cursor: pointer;
-			/*   border:solid 1px white; */
-			transition: 0.5s;
-			overflow: hidden;
-			/*background-color: red;*/
-		}
+    #backArrow {
+      position: relative;
+      width: 50px;
+      height: 30px;
+      cursor: pointer;
+      /*   border:solid 1px white; */
+      transition: 0.5s;
+      overflow: hidden;
+      /*background-color: red;*/
+    }
 
+    #backArrow:after {
+      position: absolute;
+      display: block;
+      content: "";
+      color: black;
+      width: 20px;
+      height: 15px;
+      /*   border:solid 1px;  */
+      top: -1px;
+      left: 12px;
+      border-bottom: solid 1px;
+      transform: translatex(4px);
+    }
 
-		#backArrow:after {
-			position: absolute;
-			display: block;
-			content: "";
-			color: black;
-			width: 20px;
-			height: 15px;
-			/*   border:solid 1px;  */
-			top: -1px;
-			left: 12px;
-			border-bottom: solid 1px;
-			transform: translatex(4px);
-		}
+    #backArrow:before {
+      position: absolute;
+      display: block;
+      content: "";
+      color: black;
+      width: 8px;
+      height: 8px;
+      border-top: solid 1px;
+      border-left: solid 1px;
+      top: 0.9rem;
+      left: 15px;
+      transform-origin: 0% 0%;
+      transform: rotatez(-45deg);
+    }
 
-		#backArrow:before {
-			position: absolute;
-			display: block;
-			content: "";
-			color: black;
-			width: 8px;
-			height: 8px;
-			border-top: solid 1px;
-			border-left: solid 1px;
-			top: 0.9rem;
-			left: 15px;
-			transform-origin: 0% 0%;
-			transform: rotatez(-45deg);
-		}
+    #backArrow:hover:before {
+      animation: aniArrow01 1s cubic-bezier(0.7, 0.1, 0.5, 1) infinite 0s;
+    }
 
-		#backArrow:hover:before {
-			animation: aniArrow01 1s cubic-bezier(0.7, 0.1, 0.5, 1) infinite 0s;
-		}
+    #backArrow:hover:after {
+      animation: aniArrow02 1s cubic-bezier(0.7, 0.1, 0.5, 1) infinite 0s;
+    }
 
-		#backArrow:hover:after {
-			animation: aniArrow02 1s cubic-bezier(0.7, 0.1, 0.5, 1) infinite 0s;
-		}
+    @keyframes aniArrow01 {
+      0% {
+        transform: rotatez(-45deg) translateY(30px) translateX(30px);
+      }
 
-		@keyframes aniArrow01 {
-			0% {
-				transform: rotatez(-45deg) translateY(30px) translateX(30px);
-			}
+      100% {
+        transform: rotatez(-45deg) translateY(-35px) translateX(-35px);
+      }
+    }
 
-			100% {
-				transform: rotatez(-45deg) translateY(-35px) translateX(-35px);
-			}
-		}
+    @keyframes aniArrow02 {
+      0% {
+        transform: translateX(45px);
+      }
 
-		@keyframes aniArrow02 {
-			0% {
-				transform: translateX(45px);
-			}
+      100% {
+        transform: translateX(-44px);
+      }
+    }
 
-			100% {
-				transform: translateX(-44px);
-			}
-		}
+    @keyframes borderAni {
+      0% {
+        border: solid 2px white;
+      }
 
-		@keyframes borderAni {
-			0% {
-				border: solid 2px white;
-			}
+      100% {
+        border: solid 2px white;
+        border-radius: 50%;
+      }
+    }
 
-			100% {
-				border: solid 2px white;
-				border-radius: 50%;
-			}
-		}
+    #productsContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 100px auto;
+      gap: 70px 0px;
+    }
 
-		#productsContainer {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			flex-wrap: wrap;
-			width: 90%;
-			margin: 100px auto;
-			gap: 70px 0px;
-		}
+    .product {
+      width: 30%;
+    }
 
-		.product {
-			width: 30%;
-		}
+    .imageContainer {
+      border-radius: 30px;
+      background-color: rgba(255, 255, 255, 0.045);
+      -webkit-box-shadow: 0px 0px 0px 0.8px rgb(255, 255, 255);
+      -moz-box-shadow: 0px 0px 0px 0.8px rgb(255, 255, 255);
+      box-shadow: 0px 0px 0px 0.8px rgb(255, 255, 255);
+      transition: transform 0.4s;
+    }
 
-		.imageContainer {
-			border-radius: 30px;
-			background-color: rgba(255, 255, 255, 0.045);
-			-webkit-box-shadow: 0px 0px 0px 0.8px rgb(255, 255, 255);
-			-moz-box-shadow: 0px 0px 0px 0.8px rgb(255, 255, 255);
-			box-shadow: 0px 0px 0px 0.8px rgb(255, 255, 255);
-			transition: transform 0.4s;
-		}
+    .imageContainer:hover {
+      -webkit-box-shadow: 0px 0px 1px 1.5px rgb(255, 217, 240);
+      -moz-box-shadow: 0px 0px 1px 1.5px rgb(255, 217, 240);
+      box-shadow: 0px 0px 1px 1.5px rgb(255, 217, 240);
+      transform: scale(1.02);
+    }
 
-		.imageContainer:hover {
-			-webkit-box-shadow: 0px 0px 1px 1.5px rgb(255, 217, 240);
-			-moz-box-shadow: 0px 0px 1px 1.5px rgb(255, 217, 240);
-			box-shadow: 0px 0px 1px 1.5px rgb(255, 217, 240);
-			transform: scale(1.02);
-		}
+    .image {
+      width: 100%;
+      height: auto;
+      /*transition: transform 0.4s;*/
+    }
 
-		.image {
-			width: 100%;
-			height: auto;
-			/*transition: transform 0.4s;*/
-		}
+    .video {
+      width: 100%;
+      height: auto;
+    }
 
-		.video {
-			width: 100%;
-			height: auto;
-		}
+    @media (max-width: 1050px) {
 
-		@media (max-width: 1050px) {
+      background #fff,
+      .product {
+        width: 48%;
+      }
+    }
 
-			background #fff,
-			.product {
-				width: 48%;
-			}
-		}
+    @media (max-width: 768px) {
 
-		@media (max-width: 768px) {
-
-			background #fff,
-			.product {
-				width: 100%;
-			}
-		}
-	</style>
+      background #fff,
+      .product {
+        width: 100%;
+      }
+    }
+  </style>
 
 </head>
 
 <body>
 
-	<div id="announcementBar">
+  <div id="announcementBar">
 
-		<div id="backArrowContainer">
+    <div id="backArrowContainer">
 
+      <div id="backArrow">
 
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const backArrow = document.getElementById('backArrow');
+            backArrow.onclick = () => {
+              window.location.href = "https://kirasanart.com/";
+            };
+          });
+        </script>
+      </div>
 
-				<div id="backArrow">
-					
-						<script>
-		
-		document.addEventListener('DOMContentLoaded', () => {
-    const backArrow = document.getElementById('backArrow');
-    backArrow.onclick = () => {
-        window.location.href = "https://kirasanart.com/";
-    };
-});
-	</script>
-				</div>
+    </div>
 
-	
-			
-		</div>
+  </div>
 
-	</div>
-	
+  <div id="productsContainer">
 
+    <div class="product">
+      <a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
+        <div class="imageContainer">
 
-	<div id="productsContainer">
+          <img src="https://github.com/kiraSanti/kirasanart.com/blob/main/Assets/Perrito/1.png?raw=true" alt="Ripcurl Corp Tee Black" class="image">
+        </div>
+      </a>
+    </div>
 
-		<div class="product">
-			<a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
-				<div class="imageContainer">
+    <div class="product">
+      <a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
+        <div class="imageContainer">
+          <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/boringShirtNB.gif?v=1738551748" alt="Ripcurl Corp Tee Black" class="image">
+        </div>
 
-					<img src="https://github.com/kiraSanti/kirasanart.com/blob/main/Assets/Perrito/1.png?raw=true" alt="Ripcurl Corp Tee Black" class="image">
-				</div>
-			</a>
-		</div>
+      </a>
+    </div>
 
-		<div class="product">
-			<a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
-				<div class="imageContainer">
-					<img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/boringShirtNB.gif?v=1738551748" alt="Ripcurl Corp Tee Black" class="image">
-				</div>
+    <div class="product">
+      <a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
+        <div class="imageContainer">
+          <img src="https://github.com/kiraSanti/kirasanart.com/blob/main/Assets/Shoe/6.png?raw=true" alt="Ripcurl Corp Tee Black" class="image">
+        </div>
 
-			</a>
-		</div>
+      </a>
+    </div>
 
-		<div class="product">
-			<a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
-				<div class="imageContainer">
-					<img src="https://github.com/kiraSanti/kirasanart.com/blob/main/Assets/Shoe/6.png?raw=true" alt="Ripcurl Corp Tee Black" class="image">
-				</div>
+    <div class="product">
+      <a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
+        <div class="imageContainer">
 
-			</a>
-		</div>
+          <img src="https://github.com/kiraSanti/kirasanart.com/blob/main/Assets/Perrito/1.png?raw=true" alt="Ripcurl Corp Tee Black" class="image">
+        </div>
+      </a>
+    </div>
 
-		<div class="product">
-			<a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
-				<div class="imageContainer">
+    <div class="product">
+      <a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
+        <div class="imageContainer">
+          <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/boringShirtNB.gif?v=1738551748" alt="Ripcurl Corp Tee Black" class="image">
+        </div>
 
-					<img src="https://github.com/kiraSanti/kirasanart.com/blob/main/Assets/Perrito/1.png?raw=true" alt="Ripcurl Corp Tee Black" class="image">
-				</div>
-			</a>
-		</div>
+      </a>
+    </div>
 
-		<div class="product">
-			<a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
-				<div class="imageContainer">
-					<img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/boringShirtNB.gif?v=1738551748" alt="Ripcurl Corp Tee Black" class="image">
-				</div>
+    <div class="product">
+      <a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
+        <div class="imageContainer">
+          <img src="https://github.com/kiraSanti/kirasanart.com/blob/main/Assets/Shoe/6.png?raw=true" alt="Ripcurl Corp Tee Black" class="image">
+        </div>
 
-			</a>
-		</div>
+      </a>
+    </div>
 
-		<div class="product">
-			<a href="https://www.shore.co.uk/index.php/ripcurl-corp-tee-black.html" class="productLink">
-				<div class="imageContainer">
-					<img src="https://github.com/kiraSanti/kirasanart.com/blob/main/Assets/Shoe/6.png?raw=true" alt="Ripcurl Corp Tee Black" class="image">
-				</div>
+    <!-- Do not delete -->
+    <div class="product"></div>
+    <!-- Do not delete -->
 
-			</a>
-		</div>
-
-		<!-- Do not delete -->
-		<div class="product"></div>
-		<!-- Do not delete -->
-
-	</div>
+  </div>
 
 </body>
 
