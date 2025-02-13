@@ -20,6 +20,125 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+      
+      
+      #announcementBar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 38px;
+			/*line-height: 40px;*/
+			width: 100%;
+			/* background: #ffcce7; */
+			background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
+        background-repeat: repeat;
+    background-size: auto;
+			justify-content: center;
+			align-items: center;
+			z-index: 10;
+      border-bottom: solid 1px black;
+		}
+
+		
+		
+		
+		#backArrowContainer {
+			background-color: white;
+			width: 50px;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-right: solid 1px black;
+			/* border-bottom: solid 1px black; */
+			/*cursor: pointer;*/
+		}
+		
+        
+		#backArrow {
+			position: relative;
+			width: 50px;
+			height: 30px;
+			cursor: pointer;
+			/*   border:solid 1px white; */
+			transition: 0.5s;
+			overflow: hidden;
+			/*background-color: red;*/
+		}
+
+
+		#backArrow:after {
+			position: absolute;
+			display: block;
+			content: "";
+			color: black;
+			width: 20px;
+			height: 15px;
+			/*   border:solid 1px;  */
+			top: -1px;
+			left: 12px;
+			border-bottom: solid 1px;
+			transform: translatex(4px);
+		}
+
+		#backArrow:before {
+			position: absolute;
+			display: block;
+			content: "";
+			color: black;
+			width: 8px;
+			height: 8px;
+			border-top: solid 1px;
+			border-left: solid 1px;
+			top: 0.9rem;
+			left: 15px;
+			transform-origin: 0% 0%;
+			transform: rotatez(-45deg);
+		}
+
+		#backArrow:hover:before {
+			animation: aniArrow01 1s cubic-bezier(0.7, 0.1, 0.5, 1) infinite 0s;
+		}
+
+		#backArrow:hover:after {
+			animation: aniArrow02 1s cubic-bezier(0.7, 0.1, 0.5, 1) infinite 0s;
+		}
+
+		@keyframes aniArrow01 {
+			0% {
+				transform: rotatez(-45deg) translateY(30px) translateX(30px);
+			}
+
+			100% {
+				transform: rotatez(-45deg) translateY(-35px) translateX(-35px);
+			}
+		}
+
+		@keyframes aniArrow02 {
+			0% {
+				transform: translateX(45px);
+			}
+
+			100% {
+				transform: translateX(-44px);
+			}
+		}
+
+		@keyframes borderAni {
+			0% {
+				border: solid 2px white;
+			}
+
+			100% {
+				border: solid 2px white;
+				border-radius: 50%;
+			}
+		}
+      
+      
+      
+      
+      
         #product-component-1735610958766 {
             display: flex;
             justify-content: center;
@@ -47,6 +166,28 @@
     </style>
 </head>
 <body>
+  
+  <div id="announcementBar">
+
+		<div id="backArrowContainer">
+
+				<div id="backArrow">
+					
+						<script>
+		
+		document.addEventListener('DOMContentLoaded', () => {
+    const backArrow = document.getElementById('backArrow');
+    backArrow.onclick = () => {
+        window.location.href = "https://kirasanart.com/merch/";
+    };
+});
+	</script>
+				</div>
+		</div>
+
+	</div>
+  
+  
     <div id='product-component-1735610958766'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -307,7 +448,7 @@
       "title": "Carrito :3",
       "total": "Subtotal",
       "empty": "No tienes nada en tu carrito 😦",
-      "notice": "Precio en USD",
+      "notice": "Precio en COP",
       "button": "Pagar"
     },
     "popup": false,
@@ -392,7 +533,6 @@
 </script>
 </body>
 </html>
-
 
 
 
