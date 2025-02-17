@@ -816,10 +816,6 @@ var quotes = [
     "author": "Helen Keller"
   },
   {
-    "text": "Write your plans in pencil and give God the eraser.",
-    "author": "Paulo Coelho"
-  },
-  {
     "text": "Inspiration exists, but it has to find us working.",
     "author": "Pablo Picasso"
   },
