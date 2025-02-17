@@ -6613,7 +6613,7 @@ function typewriter() {
               iArrLength = aText[iIndex].length;
               setTimeout(type, 500);
           } else {
-              destination.style.borderRadius = "17px";
+              destination.style.borderRadius = "19px";
               destination.innerHTML = destination.innerHTML.slice(0, -1);
               isTyping = false;
           }
