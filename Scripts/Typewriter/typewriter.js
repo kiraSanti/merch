@@ -6626,11 +6626,12 @@ function typewriter() {
   type();
 }
 
-document.getElementById("owl").addEventListener("click", function() {
-  if (!isTyping) {
+// document.getElementById("owl").addEventListener("click", function() {
+//   if (!isTyping) {
     
-      typewriter();
-  }
-});
+//       typewriter();
+//   }
+// }
+// );
 
 typewriter();
