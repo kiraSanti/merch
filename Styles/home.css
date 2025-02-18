@@ -3,31 +3,31 @@
         cursor: url(https://cur.cursors-4u.net/food/foo-1/foo6.cur), auto !important;
         /* Source: https://www.cursors-4u.com/cursor/2005/04/22/foo6-11.html */
     }
-    
+
     body {
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;    
-      background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/pink8.jpg?v=1739756355');
-          /*background-repeat: repeat;
+        height: 100vh;
+        background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/pink8.jpg?v=1739756355');
+        /*background-repeat: repeat;
                 background-size: auto;*/
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center; 
-     
-    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
     }
-    
+
     ::-webkit-scrollbar {
         display: none;
-      }
-    
-    
-    
-      
+    }
+
+
+
+
     #pinkBarBottom {
         position: fixed;
         bottom: 0;
@@ -35,22 +35,22 @@
         width: calc(100% - 20px);
         margin: 10px;
         height: 106px;
-      
-     /* background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
+
+        /* background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
         background-repeat: repeat;
         background-size: auto;*/
-      
-        
-        
-       /* border-top: solid 1px white;*/
+
+
+
+        /* border-top: solid 1px white;*/
         /* margin: 10px; */
         border-radius: 17px;
-    
+
     }
-    
+
     /* pexelsThumbnail */
     #pexelsThumbnailContainer {
-    
+
         position: fixed;
         left: 0;
         bottom: 0;
@@ -61,14 +61,14 @@
         padding: 0px;
         border-radius: 17px;
         background-color: white;
-          background-image: linear-gradient(var(--bg-angle),#0880ea 0%,#8920fe 43%,#e93d82 76%,#e93dc3 90%,#c62ab6);
-        
+        background-image: linear-gradient(var(--bg-angle), #0880ea 0%, #8920fe 43%, #e93d82 76%, #e93dc3 90%, #c62ab6);
+
         -webkit-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
         -moz-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
         box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
     }
-    
-    
+
+
     #pexelsThumbnail {
         position: fixed;
         left: 0;
@@ -82,24 +82,24 @@
         margin: 10px;
         cursor: pointer;
     }
-    
-    
-    #pexelsThumbnail:hover{
+
+
+    #pexelsThumbnail:hover {
         left: 3px;
         bottom: 3px;
         -webkit-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
         -moz-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
         box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
-    
+
     }
-    
+
     /* typewriter */
-    
-    
-    
+
+
+
     #typedtextContainer {
-    
-      position: fixed;
+
+        position: fixed;
         right: 0;
         bottom: 0;
         width: 45%;
@@ -109,9 +109,9 @@
         overflow-y: scroll;
         /* overflow-y: hidden; */
         /*background-color: white;*/
-      
-          background-image: linear-gradient(var(--bg-angle),#0880ea 0%,#8920fe 43%,#e93d82 76%,#e93dc3 90%,#c62ab6);
-    
+
+        background-image: linear-gradient(var(--bg-angle), #0880ea 0%, #8920fe 43%, #e93d82 76%, #e93dc3 90%, #c62ab6);
+
         background-repeat: repeat;
         background-size: auto;
         color: white;
@@ -119,17 +119,17 @@
         font-size: 12px;
         letter-spacing: 2px;
         border-radius: 17px 17px 0px 17px;
-      
-      
-      
-    
+
+
+
+
     }
-    
-    
-    
-    
+
+
+
+
     #typedtext {
-    
+
         position: fixed;
         right: 0;
         bottom: 0;
@@ -140,8 +140,8 @@
         overflow-y: scroll;
         /* overflow-y: hidden; */
         /*background-color: white;*/
-      
-      background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
+
+        background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
         background-repeat: repeat;
         background-size: auto;
         color: white;
@@ -150,35 +150,35 @@
         letter-spacing: 2px;
         border: solid 1px white;
         border-radius: 17px 17px 0px 17px;
-    
+
     }
-    
-    
+
+
     /* mainPageClickableGifs */
-    
-    
-    #gifsContainer{
+
+
+    #gifsContainer {
         position: fixed;
-    width: 55px;
-    height: 225px;
-    right: 0;
-    bottom: 90px;
-    border: solid 1px black;
-    background-color: #d4fff9;
-    
-      
-     /*background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
+        width: 55px;
+        height: 225px;
+        right: 0;
+        bottom: 90px;
+        border: solid 1px black;
+        background-color: #d4fff9;
+
+
+        /*background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
         background-repeat: repeat;
         background-size: auto;*/
-      
-          /*background: white;*/
-    
-    border-radius: 14px 14px 14px 14px;
-    margin: 10px;
-    
-    
+
+        /*background: white;*/
+
+        border-radius: 14px 14px 14px 14px;
+        margin: 10px;
+
+
     }
-    
+
     #merch {
         position: fixed;
         right: 14px;
@@ -190,19 +190,19 @@
         margin: 10px;
         cursor: pointer;
     }
-    
+
     #merch>img {
         transition: transform 0.2s;
     }
-    
-    
+
+
     #merch>img:hover {
         transform: scale(1.30);
-    
-    
+
+
     }
-    
-    
+
+
     #youtube {
         position: fixed;
         left: 10;
@@ -213,21 +213,21 @@
         object-fit: cover;
         margin: 10px;
         cursor: pointer;
-    
+
     }
-    
+
     #youtube>img {
         transition: transform 0.2s;
     }
-    
-    
+
+
     #youtube>img:hover {
         transform: scale(1.28);
-    
-    
+
+
     }
-    
-    
+
+
     #emailUs {
         position: fixed;
         right: 8px;
@@ -239,19 +239,19 @@
         margin: 10px;
         cursor: pointer;
     }
-    
+
     #emailUs>img {
         transition: transform 0.2s;
     }
-    
-    
+
+
     #emailUs>img:hover {
         transform: scale(1.32);
-    
-    
+
+
     }
-    
-    
+
+
     #iLoveCoffe {
         position: fixed;
         right: 12px;
@@ -263,21 +263,21 @@
         margin: 10px;
         cursor: pointer;
     }
-    
+
     #iLoveCoffe>img {
         transition: transform 0.2s;
     }
-    
-    
+
+
     #iLoveCoffe>img:hover {
         transform: scale(1.10);
-    
-    
+
+
     }
-      
-      
+
+
     #owl {
-      display: none;
+        display: none;
         position: fixed;
         right: -12px;
         bottom: -13px;
@@ -288,14 +288,14 @@
         margin: 0;
         cursor: pointer;
     }
-    
+
     #owl>img {
         transition: transform 0.2s;
     }
-    
-    
+
+
     #owl>img:hover {
         transform: scale(1.35);
-    
-    
-    }  
+
+
+    }
