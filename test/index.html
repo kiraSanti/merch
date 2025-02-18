@@ -10,65 +10,373 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Styles/test.css">
+    <!-- <link rel="stylesheet" href="/Styles/home.css"> -->
 
 
+  
+  <style>
+    /* Lollipop cursor :) */
+* {
+    cursor: url(https://cur.cursors-4u.net/food/foo-1/foo6.cur), auto !important;
+    /* Source: https://www.cursors-4u.com/cursor/2005/04/22/foo6-11.html */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+  background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/pink8.jpg?v=1739756355');
+      /*background-repeat: repeat;
+            background-size: auto;*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; 
+ 
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+  
+#pinkBarBottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 20px);
+    margin: 10px;
+    height: 106px;
+  
+ /* background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
+    background-repeat: repeat;
+    background-size: auto;*/
+  
+    
+    
+   /* border-top: solid 1px white;*/
+    /* margin: 10px; */
+    border-radius: 17px;
+
+}
+
+/* pexelsThumbnail */
+#pexelsThumbnailContainer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    /*width: 37%;*/
+    height: 80px;
+    margin: 10px;
+    padding: 0px;
+    border-radius: 17px;
+    background-color: white;
+      background-image: linear-gradient(var(--bg-angle),#0880ea 0%,#8920fe 43%,#e93d82 76%,#e93dc3 90%,#c62ab6);
+    
+    -webkit-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+}
+
+
+#pexelsThumbnail {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    /*width: 37%;*/
+    height: 80px;
+    border-radius: 17px;
+    object-fit: cover;
+    /* padding: 10px; */
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+#pexelsThumbnail:hover{
+    left: 3px;
+    bottom: 3px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+
+}
+
+/* typewriter */
+
+
+
+#typedtextContainer {
+
+  position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    height: 78px;
+    margin: 8px;
+    padding: 2px 4px 2px 6px;
+    overflow-y: scroll;
+    /* overflow-y: hidden; */
+    /*background-color: white;*/
+  
+      background-image: linear-gradient(var(--bg-angle),#0880ea 0%,#8920fe 43%,#e93d82 76%,#e93dc3 90%,#c62ab6);
+
+    background-repeat: repeat;
+    background-size: auto;
+    color: white;
+    font-family: "Schoolbell", monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 17px 17px 0px 17px;
+  
+  
+  
+
+}
+
+
+
+
+#typedtext {
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    max-width: 45%;
+    max-height: 78px;
+    margin: 8px;
+    padding: 2px 4px 2px 6px;
+    overflow-y: scroll;
+    /* overflow-y: hidden; */
+    /*background-color: white;*/
+  
+  background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
+    background-repeat: repeat;
+    background-size: auto;
+    color: white;
+    font-family: "Schoolbell", monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: solid 1px white;
+    border-radius: 17px 17px 0px 17px;
+
+}
+
+
+/* mainPageClickableGifs */
+
+
+#gifsContainer{
+    position: fixed;
+width: 55px;
+height: 225px;
+right: 0;
+bottom: 90px;
+border: solid 1px black;
+background-color: #d4fff9;
+
+  
+ /*background-image: url('https://cdn.shopify.com/s/files/1/0724/1505/2001/files/starrysky.gif?v=1728530345');
+    background-repeat: repeat;
+    background-size: auto;*/
+  
+      /*background: white;*/
+
+border-radius: 14px 14px 14px 14px;
+margin: 10px;
+
+
+}
+
+#merch {
+    position: fixed;
+    right: 14px;
+    bottom: 278px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#merch>img {
+    transition: transform 0.2s;
+}
+
+
+#merch>img:hover {
+    transform: scale(1.30);
+
+
+}
+
+
+#youtube {
+    position: fixed;
+    left: 10;
+    bottom: 220px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+#youtube>img {
+    transition: transform 0.2s;
+}
+
+
+#youtube>img:hover {
+    transform: scale(1.28);
+
+
+}
+
+
+#emailUs {
+    position: fixed;
+    right: 8px;
+    bottom: 160px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#emailUs>img {
+    transition: transform 0.2s;
+}
+
+
+#emailUs>img:hover {
+    transform: scale(1.32);
+
+
+}
+
+
+#iLoveCoffe {
+    position: fixed;
+    right: 12px;
+    bottom: 115px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#iLoveCoffe>img {
+    transition: transform 0.2s;
+}
+
+
+#iLoveCoffe>img:hover {
+    transform: scale(1.10);
+
+
+}
+  
+  
+#owl {
+  display: none;
+    position: fixed;
+    right: -12px;
+    bottom: -13px;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    margin: 0;
+    cursor: pointer;
+}
+
+#owl>img {
+    transition: transform 0.2s;
+}
+
+
+#owl>img:hover {
+    transform: scale(1.35);
+
+
+}  
+  </style>  
+  
 </head>
 
 <body>
 
-    <!-- PEXELS THUMBNAIL -->
+   
+    <div id="pinkBarBottom"> </div>
 
+    
     <div id="pexelsThumbnailContainer">
         <img id="pexelsThumbnail" />
+
     </div>
 
     <script src="/Scripts/PexelsThumbnail/pexelsThumbnail.js"></script>
 
 
-    <!-- TYPED QUOTES -->
+<div id="typedtextContainer">
 
     <div id="typedtext"></div>
-    <script src="/Scripts/Typewriter/typewriter.js"></script>
 
+</div>
 
-    <!-- OWL -->
-    <!-- <div id="owlContainer">
+    <div id="owlContainer">
         <a id="owl">
           <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/owl.gif?v=1739248333"
               alt="Description of the image" width="29" height="44">
-      </a></div> -->
+      </a></div>
+  
+    <script src="/Scripts/Typewriter/typewriter.js"></script>
+  
+    
+  
+    <!--GIFS-->
+
+<div id="gifsContainer">
+
+    <a id="merch" class="mainPageClickableGifs" href="https://kirasanart.com/merch/">
+        <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/skull.gif?v=1728538993" width="50" height="50">
+    </a>
 
 
-
-    <!-- MENU GIFS -->
-
-    <div id="gifsContainer">
-
-        <a id="merch" class="mainPageClickableGifs" href="https://kirasanart.com/merch/">
-            <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/skull.gif?v=1728538993" width="50"
-                height="50">
-        </a>
+    <a id="youtube" class="mainPageClickableGifs" href="https://www.youtube.com/@kirasanart" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/Youtube_Logo_Sticker.gif?v=1737335920"
+            width="37" height="37">
+    </a>
 
 
-        <a id="youtube" class="mainPageClickableGifs" href="https://www.youtube.com/@kirasanart" target="_blank">
-            <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/Youtube_Logo_Sticker.gif?v=1737335920"
-                width="37" height="37">
-        </a>
+    <a id="emailUs" class="mainPageClickableGifs" href="mailto:kirasaninfo@gmail.com" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/mailLips.gif?v=1737334183"
+            alt="Description of the image" width="29" height="25">
+    </a>
 
+    <a id="iLoveCoffe" class="mainPageClickableGifs" href="https://buymeacoffee.com/" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/iLoveCoffe.gif?v=1737333228" width="39"
+            height="45">
+    </a>
 
-        <a id="emailUs" class="mainPageClickableGifs" href="mailto:kirasaninfo@gmail.com" target="_blank">
-            <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/mailLips.gif?v=1737334183"
-                alt="Description of the image" width="29" height="25">
-        </a>
-
-        <a id="iLoveCoffe" class="mainPageClickableGifs" href="https://buymeacoffee.com/" target="_blank">
-            <img src="https://cdn.shopify.com/s/files/1/0724/1505/2001/files/iLoveCoffe.gif?v=1737333228" width="39"
-                height="45">
-        </a>
-
-    </div>
-
+</div>    
+  
 </body>
 
 </html>
