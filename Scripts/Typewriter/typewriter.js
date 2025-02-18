@@ -1,3 +1,4 @@
+// START QUOTES
 var quotes = [
   {
     "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
@@ -6568,7 +6569,7 @@ var quotes = [
     "author": "Tom Jackson"
   }
 ];
-
+// END QUOTES
 function getRandomQuote() {
   var randomIndex = Math.floor(Math.random() * quotes.length);
   var quote = quotes[randomIndex];
